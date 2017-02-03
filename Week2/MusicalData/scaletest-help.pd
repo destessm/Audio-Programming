@@ -1,0 +1,86 @@
+#N canvas 503 233 628 304 10;
+#X text 195 87 Usage: [scaletest <midi pitch of tonic> <mode>];
+#X text 195 112 M/i/I = Ionian \, d/D = Dorian \, p/P = Phrygian \,
+y/Y = Lyidan \, x/X = Mixolydian \, m/a/A = Aeolian \, l/L = Locrian
+;
+#X text 195 99 Mode options are as follows:;
+#X obj 8 91 scaletest 71 M;
+#X msg 37 15 71;
+#X msg 66 15 72;
+#X msg 8 15 70;
+#X msg 155 15 75;
+#X msg 124 15 74;
+#X text 12 233 Outlets:;
+#X text 12 245 1) MIDI pass-through for notes in scale;
+#X text 12 259 2) scale degree for notes in scale;
+#X text 193 32 Determines scale degree of float input. If it is within
+the scale \, it passes MIDI and the scale degree number to respective
+outlets. If it is not within the scale \, nothing is outputted.;
+#X text 13 155 TL \; DR;
+#X text 12 186 Inlets:;
+#X text 12 199 1) MIDI Pitch of tonic;
+#X text 12 213 2) Mode option;
+#X text 192 12 [scaletest] or [scalepass];
+#X floatatom 8 119 5 0 0 0 - - -;
+#X floatatom 48 120 5 0 0 0 - - -;
+#X msg 94 15 73;
+#X text 414 274 (C) David Estes-Smargiassi 2017;
+#N canvas 523 328 599 223 musicExample 1;
+#X obj 16 12 hsl 512 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 26800 1;
+#X obj 16 76 hsl 512 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 26556 1;
+#X obj 13 102 mtof;
+#X obj 16 136 osc~;
+#X obj 534 61 vsl 15 128 1 7 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4233 1;
+#X obj 108 147 osc~;
+#X obj 108 127 mtof;
+#X obj 109 110 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 62 256;
+#X obj 195 130 mtof;
+#X obj 195 150 osc~;
+#X obj 195 109 - 24;
+#X obj 535 11 pddp/dsp;
+#N canvas 376 419 450 300 outToDAC 0;
+#X obj 45 103 inlet~;
+#X obj 47 214 dac~;
+#X obj 44 151 spigot~;
+#X obj 101 101 tgl 38 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 2 0;
+#X connect 2 1 1 0;
+#X connect 2 1 1 1;
+#X connect 3 0 2 1;
+#X coords 0 -1 1 1 40 40 2 100 100;
+#X restore 16 167 pd outToDAC;
+#X obj 13 41 scaletest 62 Y;
+#X text 530 192 scale deg.;
+#X floatatom 253 35 5 0 0 0 - - -;
+#X connect 0 0 13 0;
+#X connect 0 0 15 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 12 0;
+#X connect 5 0 12 0;
+#X connect 6 0 5 0;
+#X connect 7 0 6 0;
+#X connect 7 0 10 0;
+#X connect 8 0 9 0;
+#X connect 9 0 12 0;
+#X connect 10 0 8 0;
+#X connect 13 0 1 0;
+#X connect 13 1 4 0;
+#X connect 13 2 7 0;
+#X restore 195 152 pd musicExample;
+#X floatatom 89 120 5 0 0 0 - - -;
+#X text 12 274 3) tonic note;
+#X connect 3 0 18 0;
+#X connect 3 1 19 0;
+#X connect 3 2 23 0;
+#X connect 4 0 3 0;
+#X connect 5 0 3 0;
+#X connect 6 0 3 0;
+#X connect 7 0 3 0;
+#X connect 8 0 3 0;
+#X connect 20 0 3 0;

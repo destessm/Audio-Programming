@@ -1,0 +1,58 @@
+/* HelloWorld PureData external
+   Code originally from Zmolnig's Guide
+   Adapted and explained by David Estes-Smargiassi
+   1/26/2017
+*/
+
+// Includes the pure data header file, which contains all necessary components
+// to create an external
+#include "m_pd.h"
+
+
+// Defines a pointer of type t_class
+static t_class *helloworld_class;
+
+
+// Defines a structure with the name t_helloworld, which contains an object of
+// type t_object
+typedef struct t_helloworld 
+{
+  t_object x_obj;
+} t_helloworld;
+
+
+// A method which is called when a "bang" is inputted into our object
+void helloworld_bang(t_helloworld *x)
+{
+  // Writes "hello world!" to the PureData terminal
+  post("Hello world!");
+}
+
+
+// Constructor for our object
+void *helloworld_new(void)
+{
+  // Creates an object of type t_helloworld (as defined above) Calls pd_new with
+  // our class object above and casts the return value to t_helloworld
+  t_helloworld *x = (t_helloworld *)pd_new(helloworld_class);
+
+  // return above value, but cast to a void pointer.
+  return (void *)x;
+}
+
+
+// Initialization of our object. Defines the object to PureData including its
+// behavior upon given inputs.
+void helloworld_setup(void) 
+{
+  // Sets up the creation of the object...
+  helloworld_class = class_new(gensym("helloworld"), // symbolic name
+			       (t_newmethod)helloworld_new, // constructor
+			       0, // destructor (unused = 0)
+			       sizeof(t_helloworld), // memory required
+			       CLASS_DEFAULT, // GUI type
+			       0); // arguments to object
+  
+  // Sets up behavior for when it receives a bang to its first inlet
+  class_addbang(helloworld_class, helloworld_bang);
+}

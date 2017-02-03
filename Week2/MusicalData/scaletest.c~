@@ -1,0 +1,191 @@
+/* Scale Pass external
+   Only lets midi notes within a given scale pass
+   by David Estes-Smargiassi
+   February 1, 2017
+*/
+
+#include "m_pd.h"
+
+static t_class *scaletest_class;
+
+char *version = "Scale Test object v1.0, by David Estes-Smargiassi\n";
+
+typedef struct _scaletest
+{
+  t_object x_obj;
+  t_outlet *o_midi;
+  t_outlet *o_scaledg;
+  t_outlet *o_tonic;
+  int tonic; // MIDI
+  int scale[7]; // MIDI
+} t_scaletest;
+
+void *scaletest_new(t_atom *s, int argc, t_atom *argv)
+{
+  poststring(version);
+  t_scaletest *x = (t_scaletest *)pd_new(scaletest_class);
+ 
+  x->o_midi =    outlet_new(&x->x_obj,&s_float);
+  x->o_scaledg = outlet_new(&x->x_obj,&s_float);
+  x->o_tonic =   outlet_new(&x->x_obj,&s_float);
+  
+  t_atom *tnc = &argv[0];
+  t_atom *snm = &argv[1];
+
+  x->tonic = atom_getint(tnc);
+  char *buff = (char *)malloc(sizeof(char)*16);
+  atom_string(snm,buff, sizeof(char)*16);
+
+  char sn = buff[0];
+
+  if(sn == 'm' || sn == 'a' || sn == 'A') // Minor scale (Aeolian)
+    {
+      post("Aeolian mode (minor) on %d",x->tonic);
+      x->scale[0] = 0;
+      x->scale[1] = 2;
+      x->scale[2] = 3;
+      x->scale[3] = 5;
+      x->scale[4] = 7;
+      x->scale[5] = 8;
+      x->scale[6] = 10;
+    }
+  else if(sn == 'M' || sn == 'i' || sn == 'I') // Major scale (Ionian)
+    {  
+      post("Ionian mode (major) on %d",x->tonic);
+      x->scale[0] = 0;
+      x->scale[1] = 2;
+      x->scale[2] = 4;
+      x->scale[3] = 5;
+      x->scale[4] = 7;
+      x->scale[5] = 9;
+      x->scale[6] = 11;
+    }
+  else if(sn == 'd' || sn == 'D') // Dorian
+    {
+      post("Dorian mode on %d",x->tonic);
+      x->scale[0] = 0;
+      x->scale[1] = 2;
+      x->scale[2] = 3;
+      x->scale[3] = 5;
+      x->scale[4] = 7;
+      x->scale[5] = 9;
+      x->scale[6] = 10;
+    }
+  else if(sn == 'p' || sn =='P') // Phrygian
+    {
+      post("Phrygian mode on %d",x->tonic);
+      x->scale[0] = 0;
+      x->scale[1] = 1;
+      x->scale[2] = 3;
+      x->scale[3] = 5;
+      x->scale[4] = 7;
+      x->scale[5] = 8;
+      x->scale[6] = 10;
+    }
+  else if(sn == 'y' || sn == 'Y') // lYdian
+    {
+      post("Lydian mode on %d",x->tonic);
+      x->scale[0] = 0;
+      x->scale[1] = 2;
+      x->scale[2] = 4;
+      x->scale[3] = 6;
+      x->scale[4] = 7;
+      x->scale[5] = 9;
+      x->scale[6] = 11;
+    }
+  else if(sn == 'x' || sn == 'X') // miXolydian
+    {
+      post("Mixolydian mode on %d",x->tonic);
+      x->scale[0] = 0;
+      x->scale[1] = 2;
+      x->scale[2] = 4;
+      x->scale[3] = 5;
+      x->scale[4] = 7;
+      x->scale[5] = 9;
+      x->scale[6] = 10;
+    }
+  else if(sn == 'l' || sn == 'L') // Locrian
+    {
+      post("Locrian mode on %d",x->tonic);
+      x->scale[0] = 0;
+      x->scale[1] = 1;
+      x->scale[2] = 3;
+      x->scale[3] = 5;
+      x->scale[4] = 6;
+      x->scale[5] = 8;
+      x->scale[6] = 10;
+    }
+  else
+    {
+      post("Invalid scale name! Please use minor or major");
+    }
+
+  return (void *)x;
+}
+
+void scaletest_float(t_scaletest *x, t_float in)
+{
+  int input = (int)in;
+  int note = ((input - x->tonic + 144))%12;
+
+  outlet_float(x->o_tonic,x->tonic);
+
+  if(note == x->scale[0])
+    {
+      post("%d is scale degree 1", input);
+      outlet_float(x->o_midi, input);
+      outlet_float(x->o_scaledg,1);
+    }
+  else if(note == x->scale[1])
+    {
+      post("%d is scale degree 2", input);
+      outlet_float(x->o_midi, input);
+      outlet_float(x->o_scaledg,2);   
+    }
+  else if(note == x->scale[2])
+    {
+      post("%d is scale degree 3", input);
+      outlet_float(x->o_midi, input);
+      outlet_float(x->o_scaledg,3);
+    }
+  else if(note == x->scale[3])
+    {
+      post("%d is scale degree 4", input);
+      outlet_float(x->o_midi, input);
+      outlet_float(x->o_scaledg,4);
+    }
+  else if(note == x->scale[4])
+    {
+      post("%d is scale degree 5", input);
+      outlet_float(x->o_midi, input);
+      outlet_float(x->o_scaledg,5);
+    }
+  else if(note == x->scale[5])
+    {
+      post("%d is scale degree 6", input);
+      outlet_float(x->o_midi, input);
+      outlet_float(x->o_scaledg,6);
+    }
+  else if(note == x->scale[6])
+    {
+      post("%d is scale degree 7", input);
+      outlet_float(x->o_midi, input);
+      outlet_float(x->o_scaledg,7);
+    }
+  else
+    {
+      post("%d is not in this scale!",input);
+    }
+}
+
+void scaletest_setup(void)
+{
+  scaletest_class = class_new(gensym("scaletest"),
+			      (t_newmethod)scaletest_new,
+			      0,
+			      sizeof(t_scaletest),
+			      CLASS_DEFAULT,
+			      A_GIMME, 0);
+  
+  class_addfloat(scaletest_class, scaletest_float);
+}
