@@ -1,0 +1,20 @@
+#N canvas 435 365 638 184 10;
+#X obj 8 11 osc~ 200;
+#X obj 74 11 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 8 102 dac~;
+#X text 405 156 (c) David Estes-Smargiassi 2017;
+#X text 247 10 [pan3~ <default panning> <pan mode>];
+#X text 252 23 or [pan3~ <pan mode>] or [pan3~];
+#X text 9 123 Try using one of the other modes by editing the object!
+;
+#X text 248 39 Arguements \; 1) float 0-1 \, default panning (optional
+\, defaults to 0.5) \; 2) 'L' \, 'E' \, or 'C' for Linear \, Equal
+Power \, and Cosine panning respectively (defaults to Linear);
+#X obj 8 52 pan3~ 0.5 L;
+#X text 74 26 L;
+#X text 191 28 R;
+#X connect 0 0 8 0;
+#X connect 1 0 8 1;
+#X connect 8 0 2 0;
+#X connect 8 1 2 1;
