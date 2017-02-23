@@ -1,0 +1,554 @@
+bplist00“&_WebSubresources_WebMainResource• ‘	
+_WebResourceData_WebResourceMIMEType^WebResourceURL_WebResourceResponseO ‘ 
+/* start css.sty */
+.ecrm-2074{font-size:166%;}
+.ecti-2074{font-size:166%; font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecti-2074{ font-style: italic;}
+.ecrm-1440{font-size:116%;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecbx-1200{ font-weight: bold;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ecti-1200{ font-style: italic;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ectt-1200{ font-family: monospace;}
+.ecrm-1095{font-size:83%;}
+.ecrm-1000{font-size:83%;}
+.ecti-1000{font-size:83%; font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ecti-1000{ font-style: italic;}
+.ectt-1000{font-size:83%; font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+.ectt-1000{ font-family: monospace;}
+@media print {span.next {visibility:hidden;}}
+p.noindent { text-indent: 0em }
+td p.noindent { text-indent: 0em; margin-top:0em; }
+p.nopar { text-indent: 0em; }
+p.indent{ text-indent: 1.5em }
+@media print {div.crosslinks {visibility:hidden;}}
+a img { border-top: 0; border-left: 0; border-right: 0; }
+center { margin-top:1em; margin-bottom:1em; }
+td center { margin-top:0em; margin-bottom:0em; }
+.Canvas { position:relative; }
+img.math{vertical-align:middle;}
+li p.indent { text-indent: 0em }
+li p:first-child{ margin-top:0em; }
+li p:last-child, li div:last-child { margin-bottom:0.5em; }
+li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+.enumerate1 {list-style-type:decimal;}
+.enumerate2 {list-style-type:lower-alpha;}
+.enumerate3 {list-style-type:lower-roman;}
+.enumerate4 {list-style-type:upper-alpha;}
+div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+.obeylines-h,.obeylines-v {white-space: nowrap; }
+div.obeylines-v p { margin-top:0; margin-bottom:0; }
+.overline{ text-decoration:overline; }
+.overline img{ border-top: 1px solid black; }
+td.displaylines {text-align:center; white-space:nowrap;}
+.centerline {text-align:center;}
+.rightline {text-align:right;}
+div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+.fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+div.fbox {display:table}
+div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+div.minipage{width:100%;}
+div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+div.center div {text-align: left;}
+div.flushright, div.flushright div.flushright {text-align: right;}
+div.flushright div {text-align: left;}
+div.flushleft {text-align: left;}
+.underline{ text-decoration:underline; }
+.underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+.framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+.framebox-c {text-align:center;}
+.framebox-l {text-align:left;}
+.framebox-r {text-align:right;}
+span.thank-mark{ vertical-align: super }
+span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+div.footnotes{border-top:solid 1px black; border-bottom:solid 1px black; padding-bottom:1ex; padding-top:0.5ex; margin-right:15%; margin-top:2ex; font-style:italic; font-size:85%;}
+div.footnotes p{margin-top:0; margin-bottom:0; text-indent:0;}
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+table.tabular td p{margin-top:0em;}
+table.tabular {margin-left: auto; margin-right: auto;}
+td p:first-child{ margin-top:0em; }
+td p:last-child{ margin-bottom:0em; }
+div.td00{ margin-left:0pt; margin-right:0pt; }
+div.td01{ margin-left:0pt; margin-right:5pt; }
+div.td10{ margin-left:5pt; margin-right:0pt; }
+div.td11{ margin-left:5pt; margin-right:5pt; }
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+td.td00{ padding-left:0pt; padding-right:0pt; }
+td.td01{ padding-left:0pt; padding-right:5pt; }
+td.td10{ padding-left:5pt; padding-right:0pt; }
+td.td11{ padding-left:5pt; padding-right:5pt; }
+table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+.hline hr, .cline hr{ height : 1px; margin:0px; }
+.tabbing-right {text-align:right;}
+span.TEX {letter-spacing: -0.125em; }
+span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+a span.TEX span.E {text-decoration: none; }
+span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+span.LATEX span.TEX{ position:relative; left: -0.4em; }
+div.float, div.figure {margin-left: auto; margin-right: auto;}
+div.float img {text-align:center;}
+div.figure img {text-align:center;}
+.marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+.marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+table.equation {width:100%;}
+.equation td{text-align:center; }
+td.equation { margin-top:1em; margin-bottom:1em; } 
+td.equation-label { width:5%; text-align:center; }
+td.eqnarray4 { width:5%; white-space: normal; }
+td.eqnarray2 { width:5%; }
+table.eqnarray-star, table.eqnarray {width:100%;}
+div.eqnarray{text-align:center;}
+div.array {text-align:center;}
+div.pmatrix {text-align:center;}
+table.pmatrix {width:100%;}
+span.pmatrix img{vertical-align:middle;}
+div.pmatrix {text-align:center;}
+table.pmatrix {width:100%;}
+span.bar-css {text-decoration:overline;}
+img.cdots{vertical-align:middle;}
+.partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+.index-item, .index-subitem, .index-subsubitem {display:block}
+div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+div.caption span.id{font-weight: bold; white-space: nowrap; }
+h1.partHead{text-align: center}
+p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+.paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+.subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+.quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
+.verse{white-space:nowrap; margin-left:2em}
+div.maketitle {text-align:center;}
+h2.titleHead{text-align:center;}
+div.maketitle{ margin-bottom: 2em; }
+div.author, div.date {text-align:center;}
+div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+.quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
+.abstract p {margin-left:5%; margin-right:5%;}
+div.abstract {width:100%;}
+.subsectionToc, .likesubsectionToc {margin-left:2em;}
+.subsubsectionToc, .likesubsubsectionToc {margin-left:4em;}
+.figure img.graphics {margin-left:10%;}
+/* end css.sty */
+
+Xtext/css_=http://pdstatic.iem.at/externals-HOWTO/pd-externals-HOWTO.cssOçbplist00‘noX$versionX$objectsY$archiverT$top Ü†Ø#"()012NOPQRSTUVWXYZ[\]^_`abcdghiU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ Ä Ä"ÄÄ!Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_=http://pdstatic.iem.at/externals-HOWTO/pd-externals-HOWTO.css“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#AæUn±ııå»”345AMWNS.keysZNS.objects´6789:;<=>?@Ä	Ä
+ÄÄÄÄÄÄÄÄÄ´BCDEFGHIJKLÄÄÄÄÄÄÄÄÄÄÄÄVServer\Content-TypeTVary]Last-ModifiedTEtagTDate]Accept-Ranges_Content-Encoding^Content-LengthZKeep-AliveZConnection_Apache/2.4.10 (Debian)Xtext/css_Accept-Encoding_Tue, 25 Mar 2014 11:42:37 GMT_"20d4-4f56cd9408540-gzip"_Thu, 16 Feb 2017 05:22:57 GMTUbytesTgzipT1736_timeout=5, max=99ZKeep-Alive“*+ef\NSDictionary¢e/ˇˇˇˇˇˇˇˇXtext/css“*+jk_NSHTTPURLResponse£lm/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—pq_WebResourceResponseÄ    # - 2 7 ] c ~ Å Ö à ã é í ï ú ü ¢ • ® ´ ≠ Ø ± ≥ µ ∑ π ª Ω ø ¡ √   “ ﬁ ‡ ‚ ‰$)4=CFLU^`gozÜàäåéêíîñòöú®™¨Æ∞≤¥∂∏∫ºæ¿«‘ŸÁÏÒˇ!,7PYkãß«Õ“◊Îˆ˚"6:N\nqá             r              â’_WebResourceTextEncodingNameO@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+Xtext/cssUutf-8_6http://fonts.googleapis.com/css?family=Source+Sans+ProOúbplist00‘mnX$versionX$objectsY$archiverT$top Ü†Ø""()012NOPQRSTUVWXYZ[\]^_`abcfghU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ ÄÄ!ÄÄ Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_6http://fonts.googleapis.com/css?family=Source+Sans+Pro“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#AæUn±Õ∏»”345AMWNS.keysZNS.objects´6789:;<=>?@Ä	Ä
+ÄÄÄÄÄÄÄÄÄ´BCDEDGHIJKLÄÄÄÄÄÄÄÄÄÄÄÄVServer\Content-Type_Access-Control-Allow-Origin]Cache-Control_Timing-Allow-OriginTDate_X-Frame-Options_Content-Encoding_X-XSS-ProtectionWExpires_Transfer-EncodingSESF_text/css; charset=utf-8Q*_private, max-age=86400_Thu, 16 Feb 2017 05:22:58 GMTZSAMEORIGINTgzip]1; mode=block_Thu, 16 Feb 2017 05:22:58 GMTXIdentity“*+de\NSDictionary¢d/ˇˇˇˇˇˇˇˇXtext/css“*+ij_NSHTTPURLResponse£kl/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—op_WebResourceResponseÄ    # - 2 7 \ b } Ä Ñ á ä ç ë î õ û ° § ß ™ ¨ Æ ∞ ≤ ¥ ∂ ∏ ∫ º æ ¿ ¬ … — › ﬂ · „!,5;>DMVX_gr~ÄÇÑÜàäåéêíî†¢§¶®™¨Æ∞≤¥∂∏øÃÍ¯%8KSgkÖá†¿À–ﬁ˛%.3GK_mÇò             q              ö’O⁄@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v13/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(http://fonts.gstatic.com/s/lato/v13/G2uphNnNqGFMHLRsO_72ngLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+Xtext/cssUutf-8_3http://fonts.googleapis.com/css?family=Lato:400,900Oôbplist00‘mnX$versionX$objectsY$archiverT$top Ü†Ø""()012NOPQRSTUVWXYZ[\]^_`abcfghU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ ÄÄ!ÄÄ Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_3http://fonts.googleapis.com/css?family=Lato:400,900“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#AæUn±Ë^í»”345AMWNS.keysZNS.objects´6789:;<=>?@Ä	Ä
+ÄÄÄÄÄÄÄÄÄ´BCDEDGHIJKLÄÄÄÄÄÄÄÄÄÄÄÄVServer\Content-Type_Access-Control-Allow-Origin]Cache-Control_Timing-Allow-OriginTDate_X-Frame-Options_Content-Encoding_X-XSS-ProtectionWExpires_Transfer-EncodingSESF_text/css; charset=utf-8Q*_private, max-age=86400_Thu, 16 Feb 2017 05:22:58 GMTZSAMEORIGINTgzip]1; mode=block_Thu, 16 Feb 2017 05:22:58 GMTXIdentity“*+de\NSDictionary¢d/ˇˇˇˇˇˇˇˇXtext/css“*+ij_NSHTTPURLResponse£kl/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—op_WebResourceResponseÄ    # - 2 7 \ b } Ä Ñ á ä ç ë î õ û ° § ß ™ ¨ Æ ∞ ≤ ¥ ∂ ∏ ∫ º æ ¿ ¬ … — › ﬂ · „)28;AJSU\do{}ÅÉÖáâãçèëùü°£•ß©´≠Ø±≥µº…Áı"5HPdhÇÑùΩ»Õ€˚	"+0DH\j|ï             q              ó’OÈ@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTeY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
+}
+Xtext/cssUutf-8_Shttp://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-extOπbplist00‘mnX$versionX$objectsY$archiverT$top Ü†Ø""()012NOPQRSTUVWXYZ[\]^_`abcfghU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ ÄÄ!ÄÄ Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_Shttp://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#AæUn±∑‘»”345AMWNS.keysZNS.objects´6789:;<=>?@Ä	Ä
+ÄÄÄÄÄÄÄÄÄ´BCDEDGHIJKLÄÄÄÄÄÄÄÄÄÄÄÄVServer\Content-Type_Access-Control-Allow-Origin]Cache-Control_Timing-Allow-OriginTDate_X-Frame-Options_Content-Encoding_X-XSS-ProtectionWExpires_Transfer-EncodingSESF_text/css; charset=utf-8Q*_private, max-age=86400_Thu, 16 Feb 2017 05:22:58 GMTZSAMEORIGINTgzip]1; mode=block_Thu, 16 Feb 2017 05:22:58 GMTXIdentity“*+de\NSDictionary¢d/ˇˇˇˇˇˇˇˇXtext/css“*+ij_NSHTTPURLResponse£kl/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—op_WebResourceResponseÄ    # - 2 7 \ b } Ä Ñ á ä ç ë î õ û ° § ß ™ ¨ Æ ∞ ≤ ¥ ∂ ∏ ∫ º æ ¿ ¬ … — › ﬂ · „9>IRX[ajsu|Ñèõùü°£•ß©´≠Ø±Ωø¡√≈«…ÀÕœ—”’‹È+0BUhpÑà¢§Ω›ËÌ˚$)69BKPdh|äúüµ             q              ∑’!"#$%O@font-face {
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gloria Hallelujah'), local('GloriaHallelujah'), url(http://fonts.gstatic.com/s/gloriahallelujah/v8/CA1k7SlXcY5kvI81M_R28bhi4u8Y7RaAY_ljmVkqsb8.woff) format('woff');
+}
+Xtext/cssUutf-8_8http://fonts.googleapis.com/css?family=Gloria+HallelujahOûbplist00‘mnX$versionX$objectsY$archiverT$top Ü†Ø""()012NOPQRSTUVWXYZ[\]^_`abcfghU$null›	
+ !R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1ÄÄÄ ÄÄ!ÄÄ Ä”#$%&'WNS.base[NS.relativeÄ ÄÄ_8http://fonts.googleapis.com/css?family=Gloria+Hallelujah“*+,-Z$classnameX$classesUNSURL¢./UNSURLXNSObject#AæUn±Ô™»”345AMWNS.keysZNS.objects´6789:;<=>?@Ä	Ä
+ÄÄÄÄÄÄÄÄÄ´BCDEDGHIJKLÄÄÄÄÄÄÄÄÄÄÄÄVServer\Content-Type_Access-Control-Allow-Origin]Cache-Control_Timing-Allow-OriginTDate_X-Frame-Options_Content-Encoding_X-XSS-ProtectionWExpires_Transfer-EncodingSESF_text/css; charset=utf-8Q*_private, max-age=86400_Thu, 16 Feb 2017 05:22:58 GMTZSAMEORIGINTgzip]1; mode=block_Thu, 16 Feb 2017 05:22:58 GMTXIdentity“*+de\NSDictionary¢d/ˇˇˇˇˇˇˇˇXtext/css“*+ij_NSHTTPURLResponse£kl/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—op_WebResourceResponseÄ    # - 2 7 \ b } Ä Ñ á ä ç ë î õ û ° § ß ™ ¨ Æ ∞ ≤ ¥ ∂ ∏ ∫ º æ ¿ ¬ … — › ﬂ · „#.7=@FOXZaitÄÇÑÜàäåéêíîñ¢§¶®™¨Æ∞≤¥∂∏∫¡ŒÏ˙':MUimáâ¢¬Õ“‡ 	'05IMaoÅÑö             q              ú’'()*+,_WebResourceFrameNameOY<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><title>a signal-external: pan~</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,2,next,fn-in --> 
+<meta name="src" content="pd-externals-HOWTO.tex"> 
+<meta name="date" content="2014-03-25 12:42:00"> 
+<link rel="stylesheet" type="text/css" href="pd-externals-HOWTO.css"> 
+<link id="avast_os_ext_custom_font" href="//fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" type="text/css"></head><body>
+   <!--l. 875--><div class="crosslinks"><p class="noindent">[<a href="pd-externals-HOWTOse6.html">next</a>] [<a href="pd-externals-HOWTOse4.html">prev</a>] [<a href="pd-externals-HOWTOse4.html#tailpd-externals-HOWTOse4.html">prev-tail</a>] [<a href="#tailpd-externals-HOWTOse5.html">tail</a>] [<a href="pd-externals-HOWTO.html#pd-externals-HOWTOse5.html">up</a>] </p></div>
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a id="x7-290005"></a>a signal-external: <span class="ectt-1200">pan~</span></h3>
+<!--l. 876--><p class="noindent">Signal classes are normal Pd-classes, that offer additional methods for
+signals.
+<!--l. 879--></p><p class="indent">   All methods and concepts that can be realized with normal object classes can
+therefore be realized with signal classes too.
+<!--l. 882--></p><p class="indent">   Per agreement, the symbolic names of signal classes end with a tilde
+~.
+<!--l. 884--></p><p class="indent">   The class ‚Äúpan~‚Äù shall demonstrate, how signal classes are written.
+<!--l. 886--></p><p class="indent">   A signal on the left inlet is mixed with a signal on the second inlet. The
+mixing-factor between 0 and 1 is defined via a <span class="obeylines-h"><span class="verb"><span class="ectt-1200">t_float</span></span></span>-message on a third
+inlet.
+<!--l. 890--></p><p class="noindent">
+   </p><h4 class="subsectionHead"><span class="titlemark">5.1   </span> <a id="x7-300005.1"></a>variables of a signal class</h4>
+<!--l. 891--><p class="noindent">Since a signal-class is only an extended normal class, there are no principal
+differences between the data spaces.
+                                                                          
+
+                                                                          
+   </p><div class="verbatim" id="verbatim-25">
+typedef&nbsp;struct&nbsp;_pan_tilde&nbsp;{
+&nbsp;<br>&nbsp;&nbsp;t_object&nbsp;x_obj;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;f_pan;
+&nbsp;<br>&nbsp;&nbsp;t_float&nbsp;&nbsp;f;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;t_inlet&nbsp;*x_in2;
+&nbsp;<br>&nbsp;&nbsp;t_inlet&nbsp;*x_in3;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;t_outlet*x_out;
+&nbsp;<br>
+&nbsp;<br>}&nbsp;t_pan_tilde;
+</div>
+<!--l. 907--><p class="nopar">
+<!--l. 909--></p><p class="indent">   Only one variable <span class="obeylines-h"><span class="verb"><span class="ectt-1200">f_pan</span></span></span> for the <span class="ecti-1200">mixing-factor </span>of the panning-function is
+needed.
+<!--l. 911--></p><p class="indent">   The other variable <span class="obeylines-h"><span class="verb"><span class="ectt-1200">f</span></span></span> is needed whenever a signal-inlet is needed too. If no
+signal but only a float-message is present at a signal-inlet, this variable is used to
+automatically convert the float to signal.
+<!--l. 915--></p><p class="indent">   Finally, we have the members <span class="obeylines-h"><span class="verb"><span class="ectt-1200">x_in2</span></span></span>, <span class="obeylines-h"><span class="verb"><span class="ectt-1200">x_in3</span></span></span> and <span class="obeylines-h"><span class="verb"><span class="ectt-1200">x_out</span></span></span>, which are
+needed to store handles to the various extra inlets (resp. outlets) of the
+object.
+<!--l. 918--></p><p class="noindent">
+   </p><h4 class="subsectionHead"><span class="titlemark">5.2   </span> <a id="x7-310005.2"></a>signal-classes</h4>
+                                                                          
+
+                                                                          
+   <div class="verbatim" id="verbatim-26">
+void&nbsp;pan_tilde_setup(void)&nbsp;{
+&nbsp;<br>&nbsp;&nbsp;pan_tilde_class&nbsp;=&nbsp;class_new(gensym("pan~"),
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(t_newmethod)pan_tilde_new,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(t_method)pan_tilde_free,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sizeof(t_pan_tilde),
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASS_DEFAULT,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A_DEFFLOAT,&nbsp;0);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;class_addmethod(pan_tilde_class,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(t_method)pan_tilde_dsp,&nbsp;gensym("dsp"),&nbsp;0);
+&nbsp;<br>&nbsp;&nbsp;CLASS_MAINSIGNALIN(pan_tilde_class,&nbsp;t_pan_tilde,&nbsp;f);
+&nbsp;<br>}
+</div>
+<!--l. 933--><p class="nopar">
+<!--l. 935--></p><p class="indent">   Something has changed with the <span class="obeylines-h"><span class="verb"><span class="ectt-1200">class_new</span></span></span> function: the third argument
+specifies a ‚Äúfree-method‚Äù (aka <span class="ecti-1200">destructor</span>), which is called whenever an instance of
+the object is to be deleted (just like the ‚Äúnew-method‚Äù is called whenever an
+instance is to be created). In the prior examples this was set to <span class="obeylines-h"><span class="verb"><span class="ectt-1200">0</span></span></span> (meaning: we
+don‚Äôt care), but in this example we have to clean up some ressources when we
+don‚Äôt need them any more.
+<!--l. 941--></p><p class="indent">   More interestingly, a method for signal-processing has to be provided by each
+signal class.
+<!--l. 943--></p><p class="indent">   Whenever Pd‚Äôs audio engine is started, a message with the selector ‚Äúdsp‚Äù is
+sent to each object. Each class that has a method for the ‚Äúdsp‚Äù-message is
+recognised as signal class.
+<!--l. 947--></p><p class="indent">   Signal classes that want to provide signal-inlets have to declare this via the
+<span class="obeylines-h"><span class="verb"><span class="ectt-1200">CLASS_MAINSIGNALIN</span></span></span>-macro. This enables signals at the first (default) inlet. If
+more than one signal-inlet is needed, they have to be created explicitly in the
+constructor-method.
+<!--l. 953--></p><p class="indent">   Inlets that are declared as signal-inlets cannot provide methods for
+<span class="obeylines-h"><span class="verb"><span class="ectt-1200">t_float</span></span></span>-messages any longer.
+<!--l. 956--></p><p class="indent">   The first argument of the macro is a pointer to the signal class. The second
+argument is the type of the class‚Äôs data space.
+<!--l. 959--></p><p class="indent">   The last argument is a dummy-variable out of the data space that is needed to
+replace non-existing signal at the signal-inlet(s) with <span class="obeylines-h"><span class="verb"><span class="ectt-1200">t_float</span></span></span>-messages.
+                                                                          
+
+                                                                          
+<!--l. 962--></p><p class="noindent">
+   </p><h4 class="subsectionHead"><span class="titlemark">5.3   </span> <a id="x7-320005.3"></a>construction of signal-inlets and -outlets</h4>
+                                                                          
+
+                                                                          
+   <div class="verbatim" id="verbatim-27">
+void&nbsp;*pan_tilde_new(t_floatarg&nbsp;f)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;t_pan_tilde&nbsp;*x&nbsp;=&nbsp;(t_pan_tilde&nbsp;*)pd_new(pan_tilde_class);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;x-&gt;f_pan&nbsp;=&nbsp;f;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;x-&gt;x_in2&nbsp;=&nbsp;inlet_new(&amp;x-&gt;x_obj,&nbsp;&amp;x-&gt;x_obj.ob_pd,&nbsp;&amp;s_signal,&nbsp;&amp;s_signal);
+&nbsp;<br>&nbsp;&nbsp;x-&gt;x_in3&nbsp;=&nbsp;floatinlet_new&nbsp;(&amp;x-&gt;x_obj,&nbsp;&amp;x-&gt;f_pan);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;x-&gt;x_out&nbsp;=&nbsp;outlet_new(&amp;x-&gt;x_obj,&nbsp;&amp;s_signal);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;return&nbsp;(void&nbsp;*)x;
+&nbsp;<br>}
+</div>
+<!--l. 978--><p class="nopar">
+<!--l. 980--></p><p class="indent">   Additional signal-inlets are added like other inlets with the routine <span class="obeylines-h"><span class="verb"><span class="ectt-1200">inlet_new</span></span></span>.
+The last two arguments are references to the symbolic selector ‚Äúsignal‚Äù in the
+lookup-table.
+<!--l. 984--></p><p class="indent">   Signal-outlets are also created like normal (message-)outlets, by setting the
+outlet-selector to ‚Äúsignal‚Äù.
+<!--l. 987--></p><p class="indent">   The newly created inlets/outlets are ‚Äúuser-allocated‚Äù data. Pd will keep track
+of all the ressources it automatically creates (like the default inlet), and will
+eventually free these ressources once they are no longer needed. However, if we
+request an ‚Äúextra‚Äù ressource (like the additional inlets/outlets in this example; or -
+more commonly - memory that is allocated via <span class="obeylines-h"><span class="verb"><span class="ectt-1200">malloc</span></span></span> or similar), we have
+to make sure ourselves, that these ressources are freed when no longer
+needed. If we fail to do so, we will invariably create a dreaded <span class="ecti-1200">memory</span>
+<span class="ecti-1200">leak</span>.
+<!--l. 995--></p><p class="indent">   Therefore, we store the ‚Äúhandles‚Äù to the newly created inlets/outlets as
+returned by the <span class="obeylines-h"><span class="verb"><span class="ectt-1200">..._new</span></span></span> routines for later use.
+<!--l. 999--></p><p class="noindent">
+   </p><h4 class="subsectionHead"><span class="titlemark">5.4   </span> <a id="x7-330005.4"></a>DSP-methods</h4>
+<!--l. 1000--><p class="noindent">Whenever Pd‚Äôs audio engine is turned on, all signal-objects declare their
+perform-routines that are to be added to the DSP-tree.
+                                                                          
+
+                                                                          
+<!--l. 1003--></p><p class="indent">   The ‚Äúdsp‚Äù-method has two arguments, the pointer to the class-data space, and
+a pointer to an array of signals.
+<!--l. 1006--></p><p class="indent">   The signals are arranged in the array in such way, that they are
+ordered in a clockwise way in the graphical representation of the
+object.<span class="footnote-mark"><a href="#fn4x0" id="fn4x0-bk"><sup class="textsuperscript">4</sup></a></span><a id="x7-33001f4"></a>
+                                                                          
+
+                                                                          
+   </p><div class="verbatim" id="verbatim-28">
+void&nbsp;pan_tilde_dsp(t_pan_tilde&nbsp;*x,&nbsp;t_signal&nbsp;**sp)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;dsp_add(pan_tilde_perform,&nbsp;5,&nbsp;x,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sp[0]-&gt;s_vec,&nbsp;sp[1]-&gt;s_vec,&nbsp;sp[2]-&gt;s_vec,&nbsp;sp[0]-&gt;s_n);
+&nbsp;<br>}
+</div>
+<!--l. 1019--><p class="nopar">
+<!--l. 1021--></p><p class="indent">   <span class="obeylines-h"><span class="verb"><span class="ectt-1200">dsp_add</span></span></span> adds a <span class="ecti-1200">perform</span>-routine (as declared in the first argument) to the
+DSP-tree.
+<!--l. 1024--></p><p class="indent">   The second argument is the number of the following pointers to diverse
+variables. Which pointers to which variables are passed is not limited.
+<!--l. 1027--></p><p class="indent">   Here, sp[0] is the first in-signal, sp[1] represents the second in-signal and sp[3]
+points to the out-signal.
+<!--l. 1030--></p><p class="indent">   The structure <span class="obeylines-h"><span class="verb"><span class="ectt-1200">t_signal</span></span></span> contains a pointer to the its signal-vector <span class="obeylines-h"><span class="verb"><span class="ectt-1200">().s_vec</span></span></span>
+(an array of samples of type <span class="obeylines-h"><span class="verb"><span class="ectt-1200">t_sample</span></span></span>), and the length of this signal-vector
+<span class="obeylines-h"><span class="verb"><span class="ectt-1200">().s_n</span></span></span>.
+<!--l. 1034--></p><p class="indent">   Since all signal vectors of a patch (not including it‚Äôs sub-patches)
+are of the same length, it is sufficient to get the length of one of these
+vectors.
+<!--l. 1037--></p><p class="noindent">
+   </p><h4 class="subsectionHead"><span class="titlemark">5.5   </span> <a id="x7-340005.5"></a>perform-routine</h4>
+<!--l. 1038--><p class="noindent">The perform-routine is the DSP-heart of each signal class.
+<!--l. 1040--></p><p class="indent">   A pointer to an integer-array is passed to it. This array contains the pointers,
+that were passed via <span class="obeylines-h"><span class="verb"><span class="ectt-1200">dsp_add</span></span></span>, which must be casted back to their real
+type.
+<!--l. 1044--></p><p class="indent">   The perform-routine has to return a pointer to integer, that points to the
+address behind the stored pointers of the routine. This means, that the return
+argument equals the argument of the perform-routine plus the number of
+pointer variables (as declared as the second argument of <span class="obeylines-h"><span class="verb"><span class="ectt-1200">dsp_add</span></span></span>) plus
+one.
+                                                                          
+
+                                                                          
+   </p><div class="verbatim" id="verbatim-29">
+t_int&nbsp;*pan_tilde_perform(t_int&nbsp;*w)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;t_pan_tilde&nbsp;*x&nbsp;=&nbsp;(t_pan_tilde&nbsp;*)(w[1]);
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;&nbsp;*in1&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(t_sample&nbsp;*)(w[2]);
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;&nbsp;*in2&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(t_sample&nbsp;*)(w[3]);
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;&nbsp;*out&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(t_sample&nbsp;*)(w[4]);
+&nbsp;<br>&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(int)(w[5]);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;f_pan&nbsp;=&nbsp;(x-&gt;f_pan&lt;0)?0.0:(x-&gt;f_pan&gt;1)?1.0:x-&gt;f_pan;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;while&nbsp;(n--)&nbsp;*out++&nbsp;=&nbsp;(*in1++)*(1-f_pan)+(*in2++)*f_pan;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;return&nbsp;(w+6);
+&nbsp;<br>}
+</div>
+<!--l. 1066--><p class="nopar">
+<!--l. 1068--></p><p class="indent">   Each sample of the signal vectors is read and manipulated in the <span class="obeylines-h"><span class="verb"><span class="ectt-1200">while</span></span></span>-loop.
+<!--l. 1071--></p><p class="indent">   Optimisation of the DSP-tree tries to avoid unnecessary copy-operations.
+Therefore it is possible, that in- and out-signal are located at the same address in
+the memory. In this case, the programmer has to be careful not to write into the
+out-signal before having read the in-signal to avoid overwriting data that is not
+yet saved.
+<!--l. 1077--></p><p class="noindent">
+   </p><h4 class="subsectionHead"><span class="titlemark">5.6   </span> <a id="x7-350005.6"></a>destructor</h4>
+                                                                          
+
+                                                                          
+   <div class="verbatim" id="verbatim-30">
+void&nbsp;pan_tilde_free(t_pan_tilde&nbsp;*x)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;inlet_free(x-&gt;x_in2);
+&nbsp;<br>&nbsp;&nbsp;inlet_free(x-&gt;x_in3);
+&nbsp;<br>&nbsp;&nbsp;outlet_free(x-&gt;x_out);
+&nbsp;<br>}
+</div>
+<!--l. 1086--><p class="nopar">
+<!--l. 1088--></p><p class="indent">   The object has some dynamically allocated ressources, namely the additional
+inlets and outlets we created in the constructor.
+<!--l. 1091--></p><p class="indent">   Since Pd doesn‚Äôt track dynamically allocated ressources for us, we have to
+free them manually in the ‚Äúfree-method‚Äù (aka: destructor). We do so by
+calling <span class="obeylines-h"><span class="verb"><span class="ectt-1200">inlet_free</span></span></span> (resp. <span class="obeylines-h"><span class="verb"><span class="ectt-1200">outlet_free</span></span></span>) on the handles to our additional
+iolets.
+<!--l. 1096--></p><p class="indent">   Note that we do not need to free the default first outlet. As it is created
+automatically by Pd, it is also freed automatically.
+<!--l. 1099--></p><p class="noindent">
+   </p><h4 class="subsectionHead"><span class="titlemark">5.7   </span> <a id="x7-360005.7"></a>the code: <span class="ectt-1200">pan~</span></h4>
+                                                                          
+
+                                                                          
+   <div class="verbatim" id="verbatim-31">
+#include&nbsp;"m_pd.h"
+&nbsp;<br>
+&nbsp;<br>static&nbsp;t_class&nbsp;*pan_tilde_class;
+&nbsp;<br>
+&nbsp;<br>typedef&nbsp;struct&nbsp;_pan_tilde&nbsp;{
+&nbsp;<br>&nbsp;&nbsp;t_object&nbsp;&nbsp;x_obj;
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;f_pan;
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;f;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;t_inlet&nbsp;*x_in2;
+&nbsp;<br>&nbsp;&nbsp;t_inlet&nbsp;*x_in3;
+&nbsp;<br>&nbsp;&nbsp;t_outlet*x_out;
+&nbsp;<br>}&nbsp;t_pan_tilde;
+&nbsp;<br>
+&nbsp;<br>t_int&nbsp;*pan_tilde_perform(t_int&nbsp;*w)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;t_pan_tilde&nbsp;*x&nbsp;=&nbsp;(t_pan_tilde&nbsp;*)(w[1]);
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;&nbsp;*in1&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(t_sample&nbsp;*)(w[2]);
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;&nbsp;*in2&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(t_sample&nbsp;*)(w[3]);
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;&nbsp;*out&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;(t_sample&nbsp;*)(w[4]);
+&nbsp;<br>&nbsp;&nbsp;int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(int)(w[5]);
+&nbsp;<br>&nbsp;&nbsp;t_sample&nbsp;f_pan&nbsp;=&nbsp;(x-&gt;f_pan&lt;0)?0.0:(x-&gt;f_pan&gt;1)?1.0:x-&gt;f_pan;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;while&nbsp;(n--)&nbsp;*out++&nbsp;=&nbsp;(*in1++)*(1-f_pan)+(*in2++)*f_pan;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;return&nbsp;(w+6);
+&nbsp;<br>}
+&nbsp;<br>
+&nbsp;<br>void&nbsp;pan_tilde_dsp(t_pan_tilde&nbsp;*x,&nbsp;t_signal&nbsp;**sp)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;dsp_add(pan_tilde_perform,&nbsp;5,&nbsp;x,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sp[0]-&gt;s_vec,&nbsp;sp[1]-&gt;s_vec,&nbsp;sp[2]-&gt;s_vec,&nbsp;sp[0]-&gt;s_n);
+&nbsp;<br>}
+&nbsp;<br>
+&nbsp;<br>void&nbsp;pan_tilde_free(t_pan_tilde&nbsp;*x)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;inlet_free(x-&gt;x_in2);
+                                                                          
+
+                                                                          
+&nbsp;<br>&nbsp;&nbsp;inlet_free(x-&gt;x_in3);
+&nbsp;<br>&nbsp;&nbsp;outlet_free(x-&gt;x_out);
+&nbsp;<br>}
+&nbsp;<br>
+&nbsp;<br>void&nbsp;*pan_tilde_new(t_floatarg&nbsp;f)
+&nbsp;<br>{
+&nbsp;<br>&nbsp;&nbsp;t_pan_tilde&nbsp;*x&nbsp;=&nbsp;(t_pan_tilde&nbsp;*)pd_new(pan_tilde_class);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;x-&gt;f_pan&nbsp;=&nbsp;f;
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;x-&gt;x_in2=inlet_new(&amp;x-&gt;x_obj,&nbsp;&amp;x-&gt;x_obj.ob_pd,&nbsp;&amp;s_signal,&nbsp;&amp;s_signal);
+&nbsp;<br>&nbsp;&nbsp;x-&gt;x_in3=floatinlet_new&nbsp;(&amp;x-&gt;x_obj,&nbsp;&amp;x-&gt;f_pan);
+&nbsp;<br>&nbsp;&nbsp;x-&gt;x_out=outlet_new(&amp;x-&gt;x_obj,&nbsp;&amp;s_signal);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;return&nbsp;(void&nbsp;*)x;
+&nbsp;<br>}
+&nbsp;<br>
+&nbsp;<br>void&nbsp;pan_tilde_setup(void)&nbsp;{
+&nbsp;<br>&nbsp;&nbsp;pan_tilde_class&nbsp;=&nbsp;class_new(gensym("pan~"),
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(t_newmethod)pan_tilde_new,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,&nbsp;sizeof(t_pan_tilde),
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLASS_DEFAULT,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A_DEFFLOAT,&nbsp;0);
+&nbsp;<br>
+&nbsp;<br>&nbsp;&nbsp;class_addmethod(pan_tilde_class,
+&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(t_method)pan_tilde_dsp,&nbsp;gensym("dsp"),&nbsp;0);
+&nbsp;<br>&nbsp;&nbsp;CLASS_MAINSIGNALIN(pan_tilde_class,&nbsp;t_pan_tilde,&nbsp;f);
+&nbsp;<br>}
+</div>
+<!--l. 1167--><p class="nopar">
+<!--l. 1170--></p><p class="indent">
+                                                                          
+
+                                                                          
+                                                                          
+
+                                                                          
+   </p><div class="footnotes"><!--l. 1011--><p class="indent">   <span class="footnote-mark"><a href="#fn4x0-bk" id="fn4x0"><sup class="textsuperscript">4</sup></a></span><span class="ecrm-1000">If both left and right in- and out-signals exist, this means: First is the leftmost in-signal</span>
+<span class="ecrm-1000">followed by the right in-signals; after the right out-signals, finally there comes the leftmost</span>
+<span class="ecrm-1000">out-signal.</span>                                                                                                       </p></div>
+<!--l. 1173--><div class="crosslinks"><p class="noindent">[<a href="pd-externals-HOWTOse6.html">next</a>] [<a href="pd-externals-HOWTOse4.html">prev</a>] [<a href="pd-externals-HOWTOse4.html#tailpd-externals-HOWTOse4.html">prev-tail</a>] [<a href="pd-externals-HOWTOse5.html">front</a>] [<a href="pd-externals-HOWTO.html#pd-externals-HOWTOse5.html">up</a>] </p></div>
+<!--l. 1173--><p class="indent">   <a id="tailpd-externals-HOWTOse5.html"></a>   
+ 
+</p><div><div id="wrc-float-icon" style="position: fixed; z-index: 2147483646; -webkit-box-shadow: 0px 0px 6px 1px #222; left: 0px; top: 0px; width: 40px; height: 40px; background-color: #FFF; opacity: 0.95;"><div style="width: 40px; height: 40px; background-image: url(safari-extension://com.avast.wrc-6H4HRTU5E3/5ac2398f/common/skin/img//icn_float_green.png);background-size:cover;"></div></div></div></body></html>Ytext/htmlUUTF-8P_Mhttp://pdstatic.iem.at/externals-HOWTO/pd-externals-HOWTOse5.html#x7-360005.7    1 7 @ R h w ç!e!n!Æ&?&J&h'z'É'â'¬,b,m.K.T.Z.ê3-386%6.646ä;G;R<f<o<u<∞ARA]Atöêööö†ö°             -              öÒ

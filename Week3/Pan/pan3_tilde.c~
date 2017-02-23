@@ -91,46 +91,55 @@ void *pan3_tilde_new(t_atom *s, int argc, t_atom *argv)
   poststring(version);
   t_pan3_tilde *x = (t_pan3_tilde *)pd_new(pan3_tilde_class);
 
-  if(argc==0)
-    {
-      post("hello!");
-    }
-
-  t_atom *fatom = &argv[0];
-  t_atom *catom = &argv[1];
-
-  x->f_pan = atom_getint(fatom);
-  char *buff = (char *)malloc(sizeof(char)*16);
-  atom_string(catom, buff, sizeof(char)*16);
-
-  char cmode = buff[0];
-  
-  // free memory
-  //free(buff); 
-  //free(fatom);
-  //free(catom);
-
-  //x->x_in2 = inlet_new(&x->x_obj, &x->x_obj.ob_pd, &s_signal, &s_signal);
   x->x_in2 = floatinlet_new(&x->x_obj, &x->f_pan);
   x->x_out1 = outlet_new(&x->x_obj, &s_signal);
   x->x_out2 = outlet_new(&x->x_obj, &s_signal);
+  
+  char cmode = 'L';
+
+  if(argc==0)
+    {
+      x->f_pan = 0.5;
+    }
+  else if(argc==1)
+    {
+      x->f_pan = 0.5;
+
+      t_atom *catom = &argv[0];
+      char *buff = (char *)malloc(sizeof(char)*16);
+      atom_string(catom, buff, sizeof(char)*16);
+
+      cmode = buff[0];
+
+    }
+  else if(argc==2)
+    {
+      t_atom *fatom = &argv[0];
+      t_atom *catom = &argv[1];
+
+      x->f_pan = atom_getint(fatom);
+      char *buff = (char *)malloc(sizeof(char)*16);
+      atom_string(catom, buff, sizeof(char)*16);
+
+      cmode = buff[0];
+    }
 
   x->mode = 0;
   if(cmode == 'e' || cmode == 'E')
     {
       x->mode = 1; // equal power panning
-      post("using Equal Power Panning");
+      post("Started using Equal Power Panning");
     }
   else if(cmode == 'c' || cmode == 'C')
     {
       x->mode = 2; // cosine panning
-      post("using Cosine Panning");
+      post("Started using Cosine Panning");
     }
   else
-    {
-      post("using Linear Panning");
+    {  // else, linear panning (default)
+      post("Started using Linear Panning");
     }
-  // else, linear panning (default)
+
 
   return (void *)x;
 }
