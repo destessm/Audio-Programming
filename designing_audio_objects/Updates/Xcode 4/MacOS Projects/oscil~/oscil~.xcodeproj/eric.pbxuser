@@ -1,0 +1,142 @@
+// !$*UTF8*$!
+{
+	07B734D710A0A9860047B360 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	07B734D810A0A9860047B360 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	07DF22A912083C7D00655617 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07DF22AA12083C7D00655617 /* oscil~.c */;
+		name = "oscil~.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 65;
+		vrLoc = 0;
+	};
+	07DF22AA12083C7D00655617 /* oscil~.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = "oscil~.c";
+		path = "/Volumes/Lyonizer/Lyon MaxMSP Book/A-R Editions/OS X Code/Pd/Pd-0.42-5.app/Contents/Resources/extra/4. oscil~/oscil~.c";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {634, 6058}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 64}";
+		};
+	};
+	07F8066A11EB6ADC0085A1DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07FC27CC10C841B10016A25B /* oscil~.c */;
+		name = "oscil~.c: 440";
+		rLen = 0;
+		rLoc = 11804;
+		rType = 0;
+		vrLen = 363;
+		vrLoc = 7900;
+	};
+	07FC27CC10C841B10016A25B /* oscil~.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {594, 8957}}";
+			sepNavSelRange = "{3500, 0}";
+			sepNavVisRange = "{2101, 1628}";
+			sepNavWindowFrame = "{{942, 186}, {653, 734}}";
+		};
+	};
+	07FFFF8C121DA485008E22B8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07FFFF8D121DA485008E22B8 /* oscil~.c */;
+		name = "oscil~.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 64;
+		vrLoc = 0;
+	};
+	07FFFF8D121DA485008E22B8 /* oscil~.c */ = {
+		isa = PBXFileReference;
+		name = "oscil~.c";
+		path = "/Volumes/Lyonizer/Lyon MaxMSP Book/A-R Editions/OS X Code/Pd/Pd-0.42-5.app/Contents/Resources/extra/4. oscil~/oscil~.c";
+		sourceTree = "<absolute>";
+	};
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Deployment;
+		activeSDKPreference = macosx10.6;
+		activeTarget = 2FBBEAD608F335360078DB84 /* max-external */;
+		addToTargets = (
+			2FBBEAD608F335360078DB84 /* max-external */,
+		);
+		codeSenseManager = 07B734D810A0A9860047B360 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					456,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					416,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 303923594;
+			PBXWorkspaceStateSaveDate = 303923594;
+		};
+		perUserProjectItems = {
+			07DF22A912083C7D00655617 /* PBXTextBookmark */ = 07DF22A912083C7D00655617 /* PBXTextBookmark */;
+			07F8066A11EB6ADC0085A1DB /* PBXTextBookmark */ = 07F8066A11EB6ADC0085A1DB /* PBXTextBookmark */;
+			07FFFF8C121DA485008E22B8 /* PBXTextBookmark */ = 07FFFF8C121DA485008E22B8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 07B734D710A0A9860047B360 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2FBBEAD608F335360078DB84 /* max-external */ = {
+		activeExec = 0;
+	};
+}

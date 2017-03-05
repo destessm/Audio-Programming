@@ -1,0 +1,222 @@
+// !$*UTF8*$!
+{
+	073446E2116A7C3500CB74FD /* dynstoch~.c:4 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 07D793221167892100682290 /* dynstoch~.c */;
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 4;
+		modificationTime = 292191285.882014;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	07B301B11220067400195525 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 07D793221167892100682290 /* dynstoch~.c */;
+	};
+	07B301B21220068300195525 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07D793221167892100682290 /* dynstoch~.c */;
+		name = "dynstoch~.c: 181";
+		rLen = 0;
+		rLoc = 5203;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 5136;
+	};
+	07B301B31220068300195525 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07B301B41220068300195525 /* dynstoch~.c */;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+		rType = 0;
+	};
+	07B301B41220068300195525 /* dynstoch~.c */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.c;
+		name = "dynstoch~.c";
+		path = "/Volumes/Lyonizer/Lyon MaxMSP Book/A-R Editions/CD-ROM/Designing Audio Objects/Code/Pd Code/Mac OS Code/dynstoch~/dynstoch~.c";
+		sourceTree = "<absolute>";
+	};
+	07B301BE1220719500195525 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07B301BF1220719500195525 /* dynstoch~.c */;
+		name = "dynstoch~.c: 422";
+		rLen = 0;
+		rLoc = 11271;
+		rType = 0;
+		vrLen = 417;
+		vrLoc = 0;
+	};
+	07B301BF1220719500195525 /* dynstoch~.c */ = {
+		isa = PBXFileReference;
+		name = "dynstoch~.c";
+		path = "/Volumes/Lyonizer/Lyon MaxMSP Book/A-R Editions/CD-ROM/Designing Audio Objects/Code/Pd Code/Mac OS Code/dynstoch~/dynstoch~.c";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 5590}}";
+			sepNavSelRange = "{11271, 0}";
+			sepNavVisRange = "{0, 417}";
+		};
+	};
+	07B301C01220719500195525 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07D793221167892100682290 /* dynstoch~.c */;
+		name = "dynstoch~.c: 421";
+		rLen = 71;
+		rLoc = 11188;
+		rType = 0;
+		vrLen = 1125;
+		vrLoc = 10286;
+	};
+	07B734D710A0A9860047B360 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	07B734D810A0A9860047B360 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	07D793221167892100682290 /* dynstoch~.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 5551}}";
+			sepNavSelRange = "{5203, 0}";
+			sepNavVisRange = "{5110, 414}";
+			sepNavWindowFrame = "{{372, 81}, {828, 830}}";
+		};
+	};
+	07D79355116792D100682290 /* dynstoch~.c:4 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 07D793221167892100682290 /* dynstoch~.c */;
+		functionName = "ramp_assist()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 4;
+		modificationTime = 292000465.725765;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	07DEA13011691CDC00E91CF5 /* dynstoch~.c:4 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 07D793221167892100682290 /* dynstoch~.c */;
+		functionName = "moogvcf_perform()";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 4;
+		modificationTime = 292101340.59538;
+		originalNumberOfMultipleMatches = 0;
+		state = 1;
+	};
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Deployment;
+		activeSDKPreference = macosx10.6;
+		activeTarget = 2FBBEAD608F335360078DB84 /* max-external */;
+		addToTargets = (
+			2FBBEAD608F335360078DB84 /* max-external */,
+		);
+		breakpoints = (
+			07D79355116792D100682290 /* dynstoch~.c:4 */,
+			07DEA13011691CDC00E91CF5 /* dynstoch~.c:4 */,
+			073446E2116A7C3500CB74FD /* dynstoch~.c:4 */,
+		);
+		codeSenseManager = 07B734D810A0A9860047B360 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					513,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					355,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 304080234;
+			PBXWorkspaceStateSaveDate = 304080234;
+		};
+		perUserProjectItems = {
+			07B301B11220067400195525 /* PBXBookmark */ = 07B301B11220067400195525 /* PBXBookmark */;
+			07B301B21220068300195525 /* PBXTextBookmark */ = 07B301B21220068300195525 /* PBXTextBookmark */;
+			07B301B31220068300195525 /* PBXTextBookmark */ = 07B301B31220068300195525 /* PBXTextBookmark */;
+			07B301BE1220719500195525 /* PBXTextBookmark */ = 07B301BE1220719500195525 /* PBXTextBookmark */;
+			07B301C01220719500195525 /* PBXTextBookmark */ = 07B301C01220719500195525 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 07B734D710A0A9860047B360 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2FBBEAD608F335360078DB84 /* max-external */ = {
+		activeExec = 0;
+	};
+}

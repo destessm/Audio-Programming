@@ -1,0 +1,24 @@
+#N canvas 699 268 461 249 10;
+#X obj -620 -174 bambien~;
+#X obj -620 -141 bambide~;
+#X obj -620 -113 dac~;
+#X obj -598 -212 osc~ 0.1;
+#X obj -598 -193 *~ 360;
+#X obj -620 -231 osc~ 440;
+#X text -560 -233 <- mono audio source;
+#X text -539 -214 <- panning in degrees;
+#X text -558 -175 (third inlet in [bambien~] does height data \, which
+is not processed by [bambide~] \, which is simply a left-right channel
+decoder;
+#X text -624 -84 (c) David Estes-Smargiassi 2017;
+#X text -624 -289 [bambien~] and [bambide~] \; The bad ambisonics encoder
+and decoder \; by David Estes-Smargiassi;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 0 2 1 2;
+#X connect 0 3 1 3;
+#X connect 1 0 2 0;
+#X connect 1 1 2 1;
+#X connect 3 0 4 0;
+#X connect 4 0 0 1;
+#X connect 5 0 0 0;
