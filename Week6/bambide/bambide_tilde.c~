@@ -1,7 +1,5 @@
 #include "m_pd.h"  
 
-#define DEGTORAD 0.01745329
-
 static t_class *bambide_tilde_class;  
 
 typedef struct _bambide_tilde {  

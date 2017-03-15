@@ -63,7 +63,7 @@ void *bambide_tilde_new(void)
   
   x->x_in2=inlet_new(&x->x_obj, &x->x_obj.ob_pd, &s_signal, &s_signal);
   x->x_in3=inlet_new(&x->x_obj, &x->x_obj.ob_pd, &s_signal, &s_signal);
-  x->x_in3=inlet_new(&x->x_obj, &x->x_obj.ob_pd, &s_signal, &s_signal);
+  x->x_in4=inlet_new(&x->x_obj, &x->x_obj.ob_pd, &s_signal, &s_signal);
 
   x->x_out1=outlet_new(&x->x_obj, &s_signal);  
   x->x_out2=outlet_new(&x->x_obj, &s_signal);  
