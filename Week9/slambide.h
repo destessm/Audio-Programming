@@ -165,29 +165,7 @@ t_int slambide_tilde_perform(t_int *w)
     }
   return (w+3+numIns+numOuts);
 }
-/*
-void slambide_tilde_dsp_old(t_slambide_tilde *x, t_signal **sp)  
-{  
-  if(x->dectype <= 1) // Stereo
-    {
-      dsp_add(slambide_tilde_stereo,7, x, sp[0]->s_vec, sp[1]->s_vec,
-	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[0]->s_n);
-    }
-  else if(x->dectype == 2) // Quad
-    {
-      dsp_add(slambide_tilde_stereo,10, x, sp[0]->s_vec, sp[1]->s_vec,
-	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[5]->s_vec,
-	      sp[6]->s_vec, sp[7]->s_vec, sp[0]->s_n);
-    }
-  else // Pent 
-    {
-      dsp_add(slambide_tilde_stereo,12, x, sp[0]->s_vec, sp[1]->s_vec,
-	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[5]->s_vec,
-	      sp[6]->s_vec, sp[7]->s_vec, sp[8]->s_vec, sp[9]->s_vec,
-	      sp[0]->s_n);
-    }
-}
-*/
+
 
 void slambide_tilde_dsp_attempt(t_slambide_tilde *x, t_signal **sp)
 {
