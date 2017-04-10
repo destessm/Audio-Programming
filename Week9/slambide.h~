@@ -4,6 +4,7 @@
 #include <math.h>
 #include <m_pd.h>
 #include <stdio.h>
+#define DEGTORAD 0.0174532925
 
 static char *deVersion = "[slambide~] v.1 David Estes-Smargiassi 2017";
 
@@ -16,114 +17,37 @@ typedef struct _slambide_tilde {
   int dectype;
   int numOutlets;
   float *locCoefs;
-} t_slambide_tilde;  
+  float *optCoefs;
+} t_slambide_tilde; 
 
-/*
-t_int *slambide_tilde_stereo(t_int *w)  
-{  
-  t_slambide_tilde *x = (t_slambide_tilde *)(w[1]);  
-  t_sample *in1  = (t_sample *)(w[2]); // W
-  t_sample *in2  = (t_sample *)(w[3]); // Y
-  t_sample *in3  = (t_sample *)(w[4]); // X
-  t_sample *out1 = (t_sample *)(w[5]);
-  t_sample *out2 = (t_sample *)(w[6]);
-  int n = (int)(w[7]);  
-  t_sample sample1, sample2, sample3, sample4;
-
-  
-  while (n--)
+long long fact(int n)
+{
+  switch n
     {
-      sample1 = (*in1++); // W
-      sample2 = (*in2++); // Y
-      sample3 = (*in3++); // X
-      
-      // basic decoder
-      (*out1++) = sample1 * 0.707 + sample3* 0.5;
-      (*out2++) = sample1 * 0.707 + sample3* -0.5;
+    case 1:  return (long long)1;
+    case 2:  return (long long)2;
+    case 3:  return (long long)6;
+    case 4:  return (long long)24;
+    case 5:  return (long long)120;
+    case 6:  return (long long)720;
+    case 7:  return (long long)5040;
+    case 8:  return (long long)40320;
+    case 9:  return (long long)362880;
+    case 10: return (long long)3628800;
+    case 11: return (long long)39916800;
+    case 12: return (long long)479001600;
+    case 13: return (long long)6227020800;
+    case 14: return (long long)87178291200;
+    case 15: return (long long)1307674368000;
+    case 16: return (long long)20922789888000;
+    case 17: return (long long)355687428096000;
+    case 18: return (long long)6402373705728000;
+    case 19: return (long long)121645100408832000;
+    case 20: return (long long)2432902008176640000;
+    default: return 1;
     }
-
-  return (w+8);
 }
 
-t_int *slambide_tilde_quad(t_int *w)  
-{  
-  t_slambide_tilde *x = (t_slambide_tilde *)(w[1]);  
-  t_sample *in1  = (t_sample *)(w[2]); // W
-  t_sample *in2  = (t_sample *)(w[3]); // Y
-  t_sample *in3  = (t_sample *)(w[4]); // X
-  t_sample *out1 = (t_sample *)(w[5]);
-  t_sample *out2 = (t_sample *)(w[6]);
-  t_sample *out3 = (t_sample *)(w[7]);
-  t_sample *out4 = (t_sample *)(w[8]);
-  int n = (int)(w[9]);  
-  t_sample sample1, sample2, sample3, sample4;
-
-  
-  while (n--)
-    {
-      sample1 = (*in1++); // W
-      sample2 = (*in2++); // Y
-      sample3 = (*in3++); // X
-      
-      // basic quad decoder [counter-clockwise]
-      // front left
-      (*out1++) = (sample1 * 0.3536) + (sample2 * 0.1768)  + (sample3 * 0.1768);
-      // back left
-      (*out2++) = (sample1 * 0.3536) + (sample2 * -0.1768) + (sample3 * 0.1768);
-      // back right
-      (*out3++) = (sample1 * 0.3536) + (sample2 * -0.1768) + (sample3 * -0.1768);
-      // front right
-      (*out2++) = (sample1 * 0.3536) + (sample2 * 0.1768)  + (sample3 * -0.1768);
-    }
-
-  return (w+10);
-}
-
-t_int *slambide_tilde_pent(t_int *w)  
-{  
-  t_slambide_tilde *x = (t_slambide_tilde *)(w[1]);  
-  t_sample *in1  = (t_sample *)(w[2]); // W
-  t_sample *in2  = (t_sample *)(w[3]); // X
-  t_sample *in3  = (t_sample *)(w[4]); // Y
-  t_sample *in4  = (t_sample *)(w[5]); // V
-  t_sample *in5  = (t_sample *)(w[6]); // U
-  t_sample *out1 = (t_sample *)(w[7]);
-  t_sample *out2 = (t_sample *)(w[8]);
-  t_sample *out3 = (t_sample *)(w[9]);
-  t_sample *out4 = (t_sample *)(w[10]);
-  t_sample *out5 = (t_sample *)(w[11]);
-  int n = (int)(w[12]);  
-  t_sample sample1, sample2, sample3, sample4, sample5;
-
-  
-  while (n--)
-    {
-      sample1 = (*in1++); // W
-      sample2 = (*in2++); // Y
-      sample3 = (*in3++); // X
-      sample4 = (*in4++); // V
-      sample5 = (*in5++); // U
-      
-      // basic pent decoder [counter-clockwise]
-      (*out1++) = (sample1 * 0.405) + (sample2 * 0.320)  + (sample3 * 0.310)
-	+ (sample4 * 0.085) + (sample5 * 0.125);
-
-      (*out2++) = (sample1 * 0.405) + (sample2 * 0.320)  + (sample3 * -0.310)
-	+ (sample4 * 0.085) + (sample5 * -0.125);
-
-      (*out3++) = (sample1 * 0.085) + (sample2 * 0.040)  + (sample3 * 0.000)
-	+ (sample4 * 0.045) + (sample5 * 0.000);
-
-      (*out4++) = (sample1 * 0.635) + (sample2 * -0.335)  + (sample3 * 0.380)
-	+ (sample4 * 0.080) + (sample5 * 0.080);
-
-      (*out5++) = (sample1 * 0.635) + (sample2 * -0.335)  + (sample3 * -0.280)
-	+ (sample4 * -0.080) + (sample5 * -0.080);
-    }
-
-  return (w+13);
-}
-*/
 t_int slambide_tilde_perform(t_int *w)
 {
   /* generalized perform method */
@@ -150,7 +74,7 @@ t_int slambide_tilde_perform(t_int *w)
     {
       for(i=0; i<numIns; i++)
 	{
-	  samples[i] = (*ins[i]++);
+	  samples[i] = (*ins[i]++) * x->optCoefs[i];
 	}
       
       for(i=0; i<numOuts; i++)
@@ -165,29 +89,7 @@ t_int slambide_tilde_perform(t_int *w)
     }
   return (w+3+numIns+numOuts);
 }
-/*
-void slambide_tilde_dsp_old(t_slambide_tilde *x, t_signal **sp)  
-{  
-  if(x->dectype <= 1) // Stereo
-    {
-      dsp_add(slambide_tilde_stereo,7, x, sp[0]->s_vec, sp[1]->s_vec,
-	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[0]->s_n);
-    }
-  else if(x->dectype == 2) // Quad
-    {
-      dsp_add(slambide_tilde_stereo,10, x, sp[0]->s_vec, sp[1]->s_vec,
-	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[5]->s_vec,
-	      sp[6]->s_vec, sp[7]->s_vec, sp[0]->s_n);
-    }
-  else // Pent 
-    {
-      dsp_add(slambide_tilde_stereo,12, x, sp[0]->s_vec, sp[1]->s_vec,
-	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[5]->s_vec,
-	      sp[6]->s_vec, sp[7]->s_vec, sp[8]->s_vec, sp[9]->s_vec,
-	      sp[0]->s_n);
-    }
-}
-*/
+
 
 void slambide_tilde_dsp_attempt(t_slambide_tilde *x, t_signal **sp)
 {
@@ -321,15 +223,14 @@ void *slambide_tilde_new(t_symbol *s, int argc, t_atom *argv)
 	// this will crash
       }
     int width = 1 + mode*2;
-    x->locCoefs = (float *) malloc(numOutlets*width*sizeof(float));
-    
-    // do math here for coeficients
+    x->locCoefs = (float *) malloc(numOutlets*width*sizeof(float));    
+    // do math here for locations coeficients
     float uni = 1/(mode+1);
     int j;
     int curAngle;
     for(i=0; i < numOutlets; i++)
       {
-	curAngle = atom_getfloat(&argv[i+2]);
+	curAngle = atom_getfloat(&argv[i+2]) * DEGTORAD;
 	x->locCoefs[i*width] = uni * 0.707; 
 	for(j=1; j < width; j++)
 	  {
@@ -343,7 +244,28 @@ void *slambide_tilde_new(t_symbol *s, int argc, t_atom *argv)
 	      }
 	  }
       }
-    
+
+    x->optCoefs = (float *) malloc(numInlets*sizeof(float));
+    // do math for optimization coeficients
+    x->optCoefs[0] = 1;
+    if(x->inphase)
+      {
+	for(i=1; i < numInlets; i+=2)
+	  {
+	    float t = pow(fact(mode), 2);
+	    float o = t / (fact(mode+i) * fact(mode-i));
+	    x->optCoefs[i] = o;
+	    x->optCoefs[i+1] = o;
+	  }
+      }
+    else
+      {
+	for(i=1; i < numInlets; i++)
+	  {
+	    x->optCoefs[i] = 1;
+	  }
+      }
+
     for(i=1; i<numOutlets; i++)
       {
 	outlet_new(&x->x_obj, &s_signal);

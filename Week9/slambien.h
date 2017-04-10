@@ -86,7 +86,7 @@ t_slambien_tilde *x = (t_slambien_tilde *)(w[1]);
       //(*out7++) = sample1 * sinf(3 * sample2); // P
     }
 
-  return (w+8);
+  return (w+10);
 }
 
 t_int *slambien_tilde_order3(t_int *w)  
@@ -101,7 +101,7 @@ t_int *slambien_tilde_order3(t_int *w)
   t_sample *out5 = (t_sample *)(w[8]);
   t_sample *out6 = (t_sample *)(w[9]);
   t_sample *out7 = (t_sample *)(w[10]);
-  int n = (int)(w[9]);  
+  int n = (int)(w[11]);  
   t_sample sample1, sample2;
   
   while (n--)
@@ -118,7 +118,7 @@ t_int *slambien_tilde_order3(t_int *w)
       (*out7++) = sample1 * sinf(3 * sample2); // P
     }
 
-  return (w+10);  
+  return (w+12);  
 }  
 
 void slambien_tilde_dsp(t_slambien_tilde *x, t_signal **sp)  
@@ -130,13 +130,13 @@ void slambien_tilde_dsp(t_slambien_tilde *x, t_signal **sp)
     }
   else if(x->order == 2)
     {
-      dsp_add(slambien_tilde_order1, 9, x, sp[0]->s_vec, sp[1]->s_vec,
+      dsp_add(slambien_tilde_order2, 9, x, sp[0]->s_vec, sp[1]->s_vec,
 	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[5]->s_vec, 
 	      sp[6]->s_vec, sp[0]->s_n);
     }
   else if(x->order >= 3)
     {
-      dsp_add(slambien_tilde_order1, 11, x, sp[0]->s_vec, sp[1]->s_vec,
+      dsp_add(slambien_tilde_order3, 11, x, sp[0]->s_vec, sp[1]->s_vec,
 	      sp[2]->s_vec, sp[3]->s_vec, sp[4]->s_vec, sp[5]->s_vec, 
 	      sp[6]->s_vec, sp[7]->s_vec, sp[8]->s_vec, sp[0]->s_n);
     }
