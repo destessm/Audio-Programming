@@ -25,6 +25,7 @@ typedef struct _slambien_tilde {
   t_outlet *x_out7;
 } t_slambien_tilde;  
 
+/* First order perform method */
 t_int *slambien_tilde_order1(t_int *w)
 {
   t_slambien_tilde *x = (t_slambien_tilde *)(w[1]);  
@@ -33,10 +34,6 @@ t_int *slambien_tilde_order1(t_int *w)
   t_sample *out1 = (t_sample *)(w[4]);
   t_sample *out2 = (t_sample *)(w[5]);
   t_sample *out3 = (t_sample *)(w[6]);
-  //t_sample *out4 = (t_sample *)(w[7]);
-  //t_sample *out5 = (t_sample *)(w[8]);
-  //t_sample *out6 = (t_sample *)(w[9]);
-  //t_sample *out7 = (t_sample *)(w[10]);
   int n = (int)(w[7]);  
   t_sample sample1, sample2;
   
@@ -48,15 +45,12 @@ t_int *slambien_tilde_order1(t_int *w)
       (*out1++) = sample1 * 0.707; // W      
       (*out2++) = sample1 * cosf(sample2); // Y
       (*out3++) = sample1 * sinf(sample2); // X
-      //(*out4++) = sample1 * cosf(2 * sample2); // V
-      //(*out5++) = sample1 * sinf(2 * sample2); // U
-      //(*out6++) = sample1 * cosf(3 * sample2); // Q
-      //(*out7++) = sample1 * sinf(3 * sample2); // P
     }
 
   return (w+8);
 }
 
+/* Second Order perform method */
 t_int *slambien_tilde_order2(t_int *w)
 {
 t_slambien_tilde *x = (t_slambien_tilde *)(w[1]);  
@@ -67,8 +61,6 @@ t_slambien_tilde *x = (t_slambien_tilde *)(w[1]);
   t_sample *out3 = (t_sample *)(w[6]);
   t_sample *out4 = (t_sample *)(w[7]);
   t_sample *out5 = (t_sample *)(w[8]);
-  //t_sample *out6 = (t_sample *)(w[9]);
-  //t_sample *out7 = (t_sample *)(w[10]);
   int n = (int)(w[9]);  
   t_sample sample1, sample2;
   
@@ -82,13 +74,12 @@ t_slambien_tilde *x = (t_slambien_tilde *)(w[1]);
       (*out3++) = sample1 * sinf(sample2); // X
       (*out4++) = sample1 * cosf(2 * sample2); // V
       (*out5++) = sample1 * sinf(2 * sample2); // U
-      //(*out6++) = sample1 * cosf(3 * sample2); // Q
-      //(*out7++) = sample1 * sinf(3 * sample2); // P
     }
 
   return (w+10);
 }
 
+/* Third Order perform method */
 t_int *slambien_tilde_order3(t_int *w)  
 {  
   t_slambien_tilde *x = (t_slambien_tilde *)(w[1]);  
@@ -121,6 +112,7 @@ t_int *slambien_tilde_order3(t_int *w)
   return (w+12);  
 }  
 
+/* DSP Method */
 void slambien_tilde_dsp(t_slambien_tilde *x, t_signal **sp)  
 {  
   if(x->order <= 1)
@@ -142,24 +134,26 @@ void slambien_tilde_dsp(t_slambien_tilde *x, t_signal **sp)
     }
 }  
 
+/* Free Method */
 void slambien_tilde_free(t_slambien_tilde *x)  
 {  
   inlet_free(x->x_in2);  
   outlet_free(x->x_out1); 
   outlet_free(x->x_out2);
   outlet_free(x->x_out3);
-  if( x->order >= 2 )
+  if( x->order >= 2 ) // test if has more outlets
     {
       outlet_free(x->x_out4);
       outlet_free(x->x_out5);
     }
-  if( x->order == 3 )
+  if( x->order == 3 ) // test if has even more outlets
     {
       outlet_free(x->x_out6);
       outlet_free(x->x_out7);
     }
 }  
 
+/* Constructor Method */
 void *slambien_tilde_new(t_floatarg o)  
 {  
   t_slambien_tilde *x = (t_slambien_tilde *)pd_new(slambien_tilde_class);  
@@ -185,6 +179,7 @@ void *slambien_tilde_new(t_floatarg o)
   return (void *)x;  
 }  
 
+/* External Setup Method */
 void slambien_tilde_setup(void) {  
   slambien_tilde_class = class_new(gensym("slambien~"),  
 				   (t_newmethod)slambien_tilde_new,  

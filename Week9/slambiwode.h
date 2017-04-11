@@ -21,6 +21,9 @@ typedef struct _slambiwode_tilde {
   float *optCoefs;
 } t_slambiwode_tilde;  
 
+/* *****************************************************
+   PERFORM METHODS 
+   *****************************************************/
 t_int *slambiwode_tilde_stereo(t_int *w)  
 { 
   t_slambiwode_tilde *x = (t_slambiwode_tilde *)(w[1]);  
@@ -277,6 +280,9 @@ t_int *slambiwode_tilde_oct(t_int *w)
   return (w+18); // end of oct
 }
 
+/* *****************************************************
+   DSP METHOD 
+   *****************************************************/
 void slambiwode_tilde_dsp(t_slambiwode_tilde *x, t_signal **sp)  
 {  
   if(x->dectype <= 1) // Stereo
@@ -314,6 +320,9 @@ void slambiwode_tilde_dsp(t_slambiwode_tilde *x, t_signal **sp)
     }
 }
 
+/* *****************************************************
+   CONSTRUCTOR AND DESTRUCTOR METHODS 
+   *****************************************************/
 void slambiwode_tilde_free(t_slambiwode_tilde *x)
 {
   free(x->locCoefs);
@@ -381,6 +390,7 @@ void *slambiwode_tilde_new(t_symbol *s, int argc, t_atom *argv)
   x->numInlets = numInlets;
   x->numOutlets = numOutlets;
   
+  // generate inlets and outlets
   int i;
   for(i=0; i<numInlets-1; i++)
     {
@@ -398,7 +408,6 @@ void *slambiwode_tilde_new(t_symbol *s, int argc, t_atom *argv)
   int j;
   int curAngle;
   float *angles = (float *)malloc(numOutlets*sizeof(float));
-  post("numOutlets: %d",numOutlets);
   // generate angles, starting front left and going counter-clockwise
   switch(mode)
     {
@@ -451,7 +460,6 @@ void *slambiwode_tilde_new(t_symbol *s, int argc, t_atom *argv)
 	    { // cos
 	      x->locCoefs[i*width + j] = uni * cosf( ((float)j/2.0 + 1) * curAngle);
 	    }
-	  post("locCoefs[%d][%d]: %.2f",i,j,x->locCoefs[i*width+j]);
 	}
     }
   
@@ -461,7 +469,6 @@ void *slambiwode_tilde_new(t_symbol *s, int argc, t_atom *argv)
   int l = 1;
   if(x->inphase)
     {
-      post("Using In-Phase Coefficients!");
       for(i=1; i < numInlets; i+=2)
 	{
 	  float t = pow(fact(mode), 2);
@@ -472,24 +479,20 @@ void *slambiwode_tilde_new(t_symbol *s, int argc, t_atom *argv)
 	}
     }
   else
-    { // coefs are all 1
-      post("NOT Using In-Phase Coefficients!");
+    { // coefs are all 1 if optimization is off
       for(i=1; i < numInlets; i++)
 	{
 	  x->optCoefs[i] = 1;
 	}
     }  
 
-  post("DEBUG: Printing Optimization Coefficients:");
-  for(i=0; i<numInlets; i++)
-    {
-      post("optCoefs[%d]: %.2f",i,x->optCoefs[i]);
-    }
-  post("DONE DEBUG");
-
   return (void *)x;  
 }  
 
+
+/* *****************************************************
+   SETUP METHOD 
+   *****************************************************/
 void slambiwode_tilde_setup(void) {  
   slambiwode_tilde_class = class_new(gensym("slambiwode~"),  
 				     (t_newmethod)slambiwode_tilde_new,  

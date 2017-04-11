@@ -22,7 +22,7 @@ typedef struct _slambide_tilde {
 
 long long fact(int n)
 {
-  switch n
+  switch(n)
     {
     case 1:  return (long long)1;
     case 2:  return (long long)2;
