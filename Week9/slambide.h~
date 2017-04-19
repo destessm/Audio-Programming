@@ -10,6 +10,8 @@ static char *deVersion = "[slambide~] v.1 David Estes-Smargiassi 2017";
 
 static t_class *slambide_tilde_class;
 
+/* UNFINISHED as of 04/10/2017 */
+
 typedef struct _slambide_tilde {  
   t_object  x_obj;
   t_sample f;
