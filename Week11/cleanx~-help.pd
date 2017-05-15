@@ -1,25 +1,26 @@
 #N canvas 580 212 319 355 10;
 #X obj 15 218 rifft~;
-#X obj 16 162 rfft~;
+#X obj 15 162 rfft~;
 #X obj 15 191 cleanx~;
 #X obj 41 93 sig~ 0.5;
 #X floatatom 41 75 5 0 0 0 - - -;
 #X floatatom 54 114 5 0 0 0 - - -;
 #X obj 54 132 sig~ 0.1;
-#X obj 20 31 noise~;
+#X obj 30 31 noise~;
 #X obj 15 248 *~;
-#X obj 82 233 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1100 1;
+#X obj 82 233 hsl 128 15 0 0.3 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6600 1;
 #X obj 15 277 dac~;
-#X obj 15 12 osc~ 440;
-#X obj 20 51 *~ 0.3;
+#X obj 30 51 *~ 0.3;
 #X text 82 73 relative threshold;
 #X text 92 111 weak bin multiplier;
 #X text 73 12 original signal;
-#X text 64 29 added noise;
+#X text 74 29 added noise;
 #X text 79 216 volume;
 #X text 18 314 (C) David Estes-Smargiassi 2017;
 #X text 70 188 << Object;
+#X obj 15 12 osc~ 440;
+#X obj 15 132 +~;
 #X connect 0 0 8 0;
 #X connect 1 0 2 0;
 #X connect 1 1 2 1;
@@ -29,9 +30,10 @@
 #X connect 4 0 3 0;
 #X connect 5 0 6 0;
 #X connect 6 0 2 3;
-#X connect 7 0 12 0;
+#X connect 7 0 11 0;
 #X connect 8 0 10 0;
 #X connect 8 0 10 1;
 #X connect 9 0 8 1;
-#X connect 11 0 1 0;
-#X connect 12 0 1 0;
+#X connect 11 0 20 1;
+#X connect 19 0 20 0;
+#X connect 20 0 1 0;

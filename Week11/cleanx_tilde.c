@@ -28,7 +28,7 @@ t_int *cleanx_tilde_perform(t_int *w)
   t_sample *multiplier = (t_sample *)(w[5]);
   t_sample *real_output = (t_sample *)(w[6]);
   t_sample *imag_output = (t_sample *)(w[7]);
-  t_int n = (w[8]) / 2;
+  int n = (w[8]) / 2;
 
   float *phase = x->phase;
   float *mag = x->mag;

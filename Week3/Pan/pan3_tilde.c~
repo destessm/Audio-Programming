@@ -68,7 +68,7 @@ t_int *pan3_tilde_perform(t_int *w)
 	{
 	  // perform cosine pan
 	  *out1++ = in*cos(twopi*(pan*0.25-0.5));
-	  *out2++ = in*cosf(twopi*(pan*0.25-0.25));
+	  *out2++ = in*cos(twopi*(pan*0.25-0.25));
 	}
     }
   return (w+6);
